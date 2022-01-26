@@ -23,16 +23,20 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ame-NQ-vuF">
-                                <rect key="frame" x="128.66666666666666" y="616" width="156.99999999999997" height="50"/>
+                                <rect key="frame" x="132" y="628" width="150" height="38"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="9e1-Nw-51X"/>
+                                    <constraint firstAttribute="height" constant="38" id="YKD-vL-oqa"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemGray6Color"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Show Text">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Show Text" titleAlignment="center">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="makeButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="00H-vt-7XG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -47,6 +51,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ame-NQ-vuF" secondAttribute="bottom" constant="70" id="db4-11-4ot"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorlsLaber" destination="iZF-IF-K2r" id="xwR-8t-EYf"/>
+                        <outlet property="toggleButton" destination="ame-NQ-vuF" id="cb3-7R-TdC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
