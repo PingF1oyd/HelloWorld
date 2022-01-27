@@ -24,13 +24,19 @@ class ViewController: UIViewController {
 
     @IBAction func makeButtonAction(_ sender: Any) {
         
-        if helloWorlsLaber.isHidden {
-            helloWorlsLaber.isHidden = false
-            toggleButton.setTitle("Hide Text", for: .normal)
-        } else {
-            helloWorlsLaber.isHidden = true
-            toggleButton.setTitle("Show Text", for: .normal)
-        }
+//        if helloWorlsLaber.isHidden {
+//            helloWorlsLaber.isHidden = false
+//            toggleButton.setTitle("Hide Text", for: .normal)
+//        } else {
+//            helloWorlsLaber.isHidden = true
+//            toggleButton.setTitle("Show Text", for: .normal)
+//        }
+        
+        
+        helloWorlsLaber.isHidden = helloWorlsLaber.isHidden ? false : true
+        let btnText = helloWorlsLaber.isHidden ? "Show Text" : "Hide Text"
+        toggleButton.setTitle(btnText, for: .normal)
+        toggleButton.backgroundColor = helloWorlsLaber.isHidden ? UIColor.systemGreen : UIColor.systemRed
     }
 }
 
